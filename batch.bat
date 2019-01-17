@@ -1,0 +1,1 @@
+docker run --rm -it --name docker_quasar --hostname quasar -e PGID=1000 -e PUID=1000 -c 256 -m 512m -v project:/home/alpine/project -p 8080:8080 --entrypoint /bin/bash woahbase/alpine-quasar:x86_64
